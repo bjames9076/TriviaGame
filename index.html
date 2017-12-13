@@ -17,13 +17,18 @@
             <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         
         
-            <script src="assets/javascript/game.js" type="text/javascript"></script>
+            <script src="assets/javascript/app.js" type="text/javascript"></script>
         
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         </head>
-        
-  <body>
 
+  <body>
+    <div class="frontPage">
+            <input id="btn" type="button" value="click" onclick="countDown()"/>
+    </div>
+
+
+    <div class="questions">
         <p class="question">1. What is the answer to this question?</p>
         <ul class="answers">
         <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Answer 1</label><br/>
@@ -55,6 +60,7 @@
         <input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Answer 3</label><br/>
         <input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Answer 4</label><br/>
         </ul>
+    </div>
 
   </body>
 
