@@ -2,14 +2,17 @@
 
 
 
-var n = 30;
-setTimeout(countDown,1000);
+    var number = 5;
 
-//quiz timmer
-function countDown(){
-   n--;
-   if(n > 0){
-      setTimeout(countDown,1000);
-   }
-   document.getElementById("timer").innerHTML = n + " seconds left!";
-}
+        function beginQuiz() {
+          intervalId = setInterval(decrement, 1000);
+        }
+    
+        function decrement() {
+          number--;
+          $("#timer").html("<h2>" + number + "</h2>");
+          if (number === 0) {
+            stop();
+            alert("Time Up!");
+          }
+        }
